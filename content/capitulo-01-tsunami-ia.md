@@ -7,6 +7,12 @@
 
 Vivemos em um momento histórico sem precedentes. A inteligência artificial não é mais uma promessa futurista ou um conceito de ficção científica - ela é uma realidade presente que está remodelando fundamentalmente a forma como trabalhamos, vivemos e nos relacionamos com a tecnologia. A metáfora do "tsunami" para descrever o impacto da IA não é apenas uma figura de linguagem dramática; é uma representação precisa da força transformadora, da velocidade de mudança e da amplitude de impacto que esta tecnologia está exercendo sobre nossa sociedade.
 
+### TÓPICO: Large Language Models (LLMs)
+
+- **O que é:** Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.
+- **Por que aprender:** Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.
+- **Conceitos chave:** Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.
+
 Um tsunami natural é caracterizado por sua força devastadora, sua capacidade de transformar paisagens inteiras e sua inevitabilidade uma vez que foi desencadeado. Da mesma forma, o tsunami da inteligência artificial possui características similares: é uma força transformadora que não pode ser detida, está remodelando completamente o panorama econômico e social, e aqueles que não se prepararem adequadamente correm o risco de serem arrastados por sua força.
 
 A diferença crucial, no entanto, é que ao contrário de um tsunami natural que traz apenas destruição, o tsunami da IA traz consigo oportunidades extraordinárias para aqueles que souberem "surfar" suas ondas. Este capítulo estabelece as bases para compreender não apenas a magnitude desta transformação, mas também como posicionar-se estrategicamente para prosperar nesta nova era.

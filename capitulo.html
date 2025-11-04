@@ -143,6 +143,65 @@
             background-color: #f7fafc;
             font-weight: 600;
         }
+
+        /* Tópicos Expansíveis (Estilo FEP) */
+        .topico-expandivel {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .topico-expandivel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .topico-expandivel h3 {
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .topico-expandivel .icon {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+        }
+        .topico-expandivel.active .icon {
+            transform: rotate(180deg);
+        }
+        .topico-conteudo {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+        .topico-conteudo.show {
+            max-height: 1000px;
+            transition: max-height 0.6s ease-in;
+        }
+        .topico-item {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .topico-item h4 {
+            color: #667eea;
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .topico-item p {
+            color: #4a5568;
+            margin: 0;
+            line-height: 1.6;
+        }
     </style>
 
     <!-- Custom CSS -->

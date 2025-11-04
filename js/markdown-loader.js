@@ -46,7 +46,12 @@ function renderMarkdown(markdown) {
             return `![${alt}](${encodedUrl})`;
         });
 
-        return marked.parse(fixedMarkdown);
+        let html = marked.parse(fixedMarkdown);
+
+        // Processar tópicos expansíveis
+        html = processarTopicosExpandiveis(html);
+
+        return html;
     } else {
         // Fallback: basic HTML escaping
         return markdown
@@ -56,6 +61,68 @@ function renderMarkdown(markdown) {
             .replace(/\n/g, '<br>');
     }
 }
+
+/* ========================================
+   TÓPICOS EXPANSÍVEIS
+   ======================================== */
+
+function processarTopicosExpandiveis(html) {
+    // Procura por bloqueios especiais no formato:
+    // <h3>TÓPICO: Título do Tópico</h3>
+    // seguido por listas com "O que é:", "Por que aprender:", "Conceitos chave:"
+
+    const topicoRegex = /<h3>TÓPICO:\s*([^<]+)<\/h3>\s*<ul>([\s\S]*?)<\/ul>/gi;
+
+    html = html.replace(topicoRegex, (match, titulo, conteudo) => {
+        const topicoId = 'topico-' + Math.random().toString(36).substr(2, 9);
+
+        // Extrair itens da lista
+        const items = conteudo.match(/<li><strong>([^:]+):<\/strong>\s*([^<]+)<\/li>/gi) || [];
+
+        let topicoHtml = `
+            <div class="topico-expandivel" onclick="toggleTopico('${topicoId}')">
+                <h3>
+                    ${titulo.trim()}
+                    <span class="icon">▼</span>
+                </h3>
+                <div class="topico-conteudo" id="${topicoId}">`;
+
+        items.forEach(item => {
+            const itemMatch = item.match(/<li><strong>([^:]+):<\/strong>\s*([^<]+)<\/li>/);
+            if (itemMatch) {
+                const label = itemMatch[1];
+                const texto = itemMatch[2];
+                topicoHtml += `
+                    <div class="topico-item">
+                        <h4>${label}</h4>
+                        <p>${texto}</p>
+                    </div>`;
+            }
+        });
+
+        topicoHtml += `
+                </div>
+            </div>`;
+
+        return topicoHtml;
+    });
+
+    return html;
+}
+
+// Função para expandir/colapsar tópicos (será chamada globalmente)
+window.toggleTopico = function(id) {
+    const conteudo = document.getElementById(id);
+    const container = conteudo.parentElement;
+
+    if (conteudo.classList.contains('show')) {
+        conteudo.classList.remove('show');
+        container.classList.remove('active');
+    } else {
+        conteudo.classList.add('show');
+        container.classList.add('active');
+    }
+};
 
 /* ========================================
    VIDEO REFERENCES
