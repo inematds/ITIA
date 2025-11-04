@@ -163,29 +163,18 @@
 
                         <div id="cap1-topics" class="topics-container" style="display: none;">
                             <!-- Lista de Tópicos -->
-                            <div class="topicos-list">
+                            <ul class="topicos-list">
                                 <!-- Tópico 1 -->
-                                <div class="topico-item-wrapper mb-2" onclick="toggleTopico('cap1-llm')">
-                                    <div class="topico-header">
-                                        <span class="topico-titulo">💡 Large Language Models (LLMs)</span>
-                                        <span class="topico-icon">▼</span>
-                                    </div>
-                                    <div class="topico-detalhes" id="cap1-llm">
-                                        <div class="topico-secao">
-                                            <h5>O que é:</h5>
-                                            <p>Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.</p>
-                                        </div>
-                                        <div class="topico-secao">
-                                            <h5>Por que aprender:</h5>
-                                            <p>Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.</p>
-                                        </div>
-                                        <div class="topico-secao">
-                                            <h5>Conceitos chave:</h5>
-                                            <p>Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <li class="topico-item">
+                                    <strong class="topico-titulo">💡 Large Language Models (LLMs)</strong>
+
+                                    <p><strong>O que é:</strong> Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.</p>
+
+                                    <p><strong>Por que aprender:</strong> Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.</p>
+
+                                    <p><strong>Conceitos chave:</strong> Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -517,7 +506,7 @@
         // Initialize with 0 completed
         updateProgress(0, 5);
 
-        // Toggle all topics in a section (FEP style - Level 1)
+        // Toggle all topics in a section (FEP style)
         function toggleAllTopics(containerId) {
             const container = document.getElementById(containerId);
             const button = event.currentTarget;
@@ -531,23 +520,6 @@
                 icon.textContent = '▼';
             }
         }
-
-        // Toggle individual topic (FEP style - Level 2)
-        function toggleTopico(id) {
-            const detalhes = document.getElementById(id);
-            const wrapper = detalhes.parentElement;
-            const icon = wrapper.querySelector('.topico-icon');
-
-            if (detalhes.classList.contains('show')) {
-                detalhes.classList.remove('show');
-                wrapper.classList.remove('expanded');
-                icon.textContent = '▼';
-            } else {
-                detalhes.classList.add('show');
-                wrapper.classList.add('expanded');
-                icon.textContent = '▲';
-            }
-        }
     </script>
 
     <style>
@@ -556,93 +528,51 @@
             margin-top: 1rem;
         }
 
+        /* Topicos List */
         .topicos-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 1rem;
         }
 
-        /* Topico Item Wrapper (Compact card by default) */
-        .topico-item-wrapper {
+        /* Individual Topic Item */
+        .topico-item {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 12px;
-            padding: 1rem 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            padding: 1.5rem;
+            color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .topico-item-wrapper:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .topico-item-wrapper.expanded {
-            padding: 1.5rem;
-        }
-
-        /* Topico Header (Title + Icon) */
-        .topico-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .topico-titulo {
+        .topico-item .topico-titulo {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
             color: white;
-            font-size: 1rem;
-            font-weight: 600;
         }
 
-        .topico-icon {
-            color: white;
-            font-size: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .topico-item-wrapper.expanded .topico-icon {
-            transform: rotate(180deg);
-        }
-
-        /* Topico Detalhes (Hidden content with 3 sections) */
-        .topico-detalhes {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out;
-        }
-
-        .topico-detalhes.show {
-            max-height: 1000px;
-            transition: max-height 0.6s ease-in;
-            margin-top: 1rem;
-        }
-
-        /* Topico Secao (Each of the 3 questions) */
-        .topico-secao {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 1rem;
+        .topico-item p {
             margin-bottom: 0.75rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.95);
         }
 
-        .topico-secao:last-child {
+        .topico-item p:last-child {
             margin-bottom: 0;
         }
 
-        .topico-secao h5 {
-            color: rgba(255, 255, 255, 0.9);
+        .topico-item p strong {
+            color: rgba(255, 255, 255, 1);
             font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
             font-size: 0.875rem;
-            margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-        }
-
-        .topico-secao p {
-            color: rgba(255, 255, 255, 0.95);
-            line-height: 1.6;
-            margin: 0;
-            font-size: 0.9375rem;
         }
     </style>
 
