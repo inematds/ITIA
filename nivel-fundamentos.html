@@ -162,24 +162,27 @@
                         </button>
 
                         <div id="cap1-topics" class="topics-container" style="display: none;">
-                            <!-- Tópico 1 -->
-                            <div class="topico-expandivel mb-3" onclick="toggleTopico('cap1-llm')">
-                                <h4 class="flex items-center justify-between">
-                                    💡 Large Language Models (LLMs)
-                                    <span class="icon">▼</span>
-                                </h4>
-                                <div class="topico-conteudo" id="cap1-llm">
-                                    <div class="topico-item">
-                                        <h5>O que é:</h5>
-                                        <p>Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.</p>
+                            <!-- Lista de Tópicos -->
+                            <div class="topicos-list">
+                                <!-- Tópico 1 -->
+                                <div class="topico-item-wrapper mb-2" onclick="toggleTopico('cap1-llm')">
+                                    <div class="topico-header">
+                                        <span class="topico-titulo">💡 Large Language Models (LLMs)</span>
+                                        <span class="topico-icon">▼</span>
                                     </div>
-                                    <div class="topico-item">
-                                        <h5>Por que aprender:</h5>
-                                        <p>Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.</p>
-                                    </div>
-                                    <div class="topico-item">
-                                        <h5>Conceitos chave:</h5>
-                                        <p>Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.</p>
+                                    <div class="topico-detalhes" id="cap1-llm">
+                                        <div class="topico-secao">
+                                            <h5>O que é:</h5>
+                                            <p>Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.</p>
+                                        </div>
+                                        <div class="topico-secao">
+                                            <h5>Por que aprender:</h5>
+                                            <p>Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.</p>
+                                        </div>
+                                        <div class="topico-secao">
+                                            <h5>Conceitos chave:</h5>
+                                            <p>Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -531,17 +534,17 @@
 
         // Toggle individual topic (FEP style - Level 2)
         function toggleTopico(id) {
-            const conteudo = document.getElementById(id);
-            const container = conteudo.parentElement;
-            const icon = container.querySelector('.icon');
+            const detalhes = document.getElementById(id);
+            const wrapper = detalhes.parentElement;
+            const icon = wrapper.querySelector('.topico-icon');
 
-            if (conteudo.classList.contains('show')) {
-                conteudo.classList.remove('show');
-                container.classList.remove('active');
+            if (detalhes.classList.contains('show')) {
+                detalhes.classList.remove('show');
+                wrapper.classList.remove('expanded');
                 icon.textContent = '▼';
             } else {
-                conteudo.classList.add('show');
-                container.classList.add('active');
+                detalhes.classList.add('show');
+                wrapper.classList.add('expanded');
                 icon.textContent = '▲';
             }
         }
@@ -553,65 +556,80 @@
             margin-top: 1rem;
         }
 
-        /* Topico Expandivel (Individual topic card) */
-        .topico-expandivel {
+        .topicos-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        /* Topico Item Wrapper (Compact card by default) */
+        .topico-item-wrapper {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .topico-expandivel:hover {
+        .topico-item-wrapper:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .topico-expandivel h4 {
-            color: white;
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin: 0;
-            cursor: pointer;
+        .topico-item-wrapper.expanded {
+            padding: 1.5rem;
         }
 
-        .topico-expandivel .icon {
+        /* Topico Header (Title + Icon) */
+        .topico-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topico-titulo {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .topico-icon {
             color: white;
             font-size: 1rem;
             transition: transform 0.3s ease;
         }
 
-        .topico-expandivel.active .icon {
+        .topico-item-wrapper.expanded .topico-icon {
             transform: rotate(180deg);
         }
 
-        /* Topico Content (Hidden by default) */
-        .topico-conteudo {
+        /* Topico Detalhes (Hidden content with 3 sections) */
+        .topico-detalhes {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out;
         }
 
-        .topico-conteudo.show {
+        .topico-detalhes.show {
             max-height: 1000px;
             transition: max-height 0.6s ease-in;
             margin-top: 1rem;
         }
 
-        /* Topico Items (O que é, Por que aprender, etc) */
-        .topico-item {
+        /* Topico Secao (Each of the 3 questions) */
+        .topico-secao {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             padding: 1rem;
             margin-bottom: 0.75rem;
         }
 
-        .topico-item:last-child {
+        .topico-secao:last-child {
             margin-bottom: 0;
         }
 
-        .topico-item h5 {
+        .topico-secao h5 {
             color: rgba(255, 255, 255, 0.9);
             font-weight: 600;
             font-size: 0.875rem;
@@ -620,7 +638,7 @@
             letter-spacing: 0.05em;
         }
 
-        .topico-item p {
+        .topico-secao p {
             color: rgba(255, 255, 255, 0.95);
             line-height: 1.6;
             margin: 0;
