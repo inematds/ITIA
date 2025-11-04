@@ -6,7 +6,12 @@
       "Bash(git init:*)",
       "Bash(git config:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n🎓 Initial commit: ATIA Course Platform\n\n- Add landing page with responsive design\n- Implement 3-level course structure (Fundamentos, Aplicação, Estratégico)\n- Add custom CSS based on FEP style guide\n- Add interactive JavaScript components\n- Create video references structure for 14 chapters\n- Add comprehensive documentation and project proposal\n\nFeatures:\n✅ JAMstack architecture\n✅ Mobile-first responsive design\n✅ Tailwind CSS integration\n✅ Accessibility (WCAG 2.1 AA)\n✅ SEO optimized\n✅ GitHub Pages ready\n\n🤖 Generated with Claude Code\nhttps://claude.com/claude-code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:inematds.github.io)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

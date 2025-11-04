@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Nível Fundamentos - ATIA. Aprenda os fundamentos da IA, engenharia de prompt e automação de processos.">
+    <title>Nível Fundamentos | ATIA - Curso de IA</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fundamentos': '#10B981',
+                        'aplicacao': '#3B82F6',
+                        'estrategico': '#8B5CF6',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-aplicacao">
+                    🎓 ATIA
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-aplicacao transition">Início</a>
+                    <a href="nivel-fundamentos.html" class="text-fundamentos font-semibold">Fundamentos</a>
+                    <a href="nivel-aplicacao.html" class="text-gray-700 hover:text-aplicacao transition">Aplicação</a>
+                    <a href="nivel-estrategico.html" class="text-gray-700 hover:text-aplicacao transition">Estratégico</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Início</a>
+                <a href="nivel-fundamentos.html" class="block py-2 text-fundamentos font-semibold">Fundamentos</a>
+                <a href="nivel-aplicacao.html" class="block py-2 text-gray-700">Aplicação</a>
+                <a href="nivel-estrategico.html" class="block py-2 text-gray-700">Estratégico</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress">
+        <div class="reading-progress-bar" style="width: 0%"></div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="text-sm text-gray-600">
+                <a href="index.html" class="hover:text-fundamentos transition">Início</a>
+                <span class="mx-2">/</span>
+                <span class="text-fundamentos font-semibold">Nível Fundamentos</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-emerald-500 via-emerald-600 to-green-700 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="text-6xl mb-4">🌟</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Nível Fundamentos
+                </h1>
+                <p class="text-xl md:text-2xl mb-6 text-emerald-100">
+                    Compreensão base da revolução IA, mercado de trabalho e engenharia de prompt
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        📚 5 Capítulos
+                    </div>
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        ⏱️ 4-6 horas
+                    </div>
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        🎯 Iniciante
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="bg-white py-8 border-b">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-semibold text-gray-700">Seu Progresso</span>
+                    <span class="text-sm text-gray-600" id="progress-text">0/5 capítulos</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Capítulo 1 -->
+                <div class="chapter-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 mb-6 border-l-4 border-fundamentos">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="inline-block bg-fundamentos text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                                Capítulo 1
+                            </span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                O Tsunami da IA - Compreendendo a Revolução Digital
+                            </h2>
+                        </div>
+                        <img src="doc/imagens/capitulo1_tsunami_ia (3).png" alt="Tsunami IA" class="w-24 h-24 object-cover rounded-lg ml-4">
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        Vivemos em um momento histórico sem precedentes. A inteligência artificial não é mais uma promessa futurista, ela é uma realidade presente remodelando fundamentalmente como trabalhamos, vivemos e nos relacionamos com a tecnologia.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 45-60 min</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 3 vídeos</span>
+                    </div>
+
+                    <div class="callout callout-info mb-4">
+                        <span class="callout-icon">📚</span>
+                        <div class="callout-content">
+                            <strong>Tópicos principais:</strong>
+                            <ul class="text-sm mt-2 space-y-1">
+                                <li>• Metáfora do tsunami e natureza exponencial</li>
+                                <li>• Histórico da IA (1950-2025)</li>
+                                <li>• GPT-5, Claude 4, Gemini 2.5 Pro</li>
+                                <li>• Impactos globais e setoriais</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto">
+                        📖 Iniciar Capítulo
+                    </button>
+                </div>
+
+                <!-- Capítulo 2 -->
+                <div class="chapter-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 mb-6 border-l-4 border-fundamentos">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="inline-block bg-fundamentos text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                                Capítulo 2
+                            </span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                Transformação Digital e o Novo Mercado de Trabalho
+                            </h2>
+                        </div>
+                        <img src="doc/imagens/capitulo2_mercado_trabalho (2).png" alt="Mercado de Trabalho" class="w-24 h-24 object-cover rounded-lg ml-4">
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        A IA está redefinindo o conceito de trabalho. Compreenda as estatísticas: 9 milhões de empregos eliminados, mas 11 milhões criados até 2030. Descubra os setores mais impactados e as habilidades do futuro.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 50-65 min</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 3 vídeos</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📥 Checklist</span>
+                    </div>
+
+                    <div class="callout callout-warning mb-4">
+                        <span class="callout-icon">⚠️</span>
+                        <div class="callout-content">
+                            <strong>Mudança de paradigma:</strong> 70% das habilidades profissionais mudarão até 2030
+                        </div>
+                    </div>
+
+                    <button class="bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto">
+                        📖 Iniciar Capítulo
+                    </button>
+                </div>
+
+                <!-- Capítulo 3 -->
+                <div class="chapter-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 mb-6 border-l-4 border-fundamentos">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="inline-block bg-fundamentos text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                                Capítulo 3
+                            </span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                Engenharia de Prompt - A Nova Linguagem do Futuro
+                            </h2>
+                        </div>
+                        <img src="doc/imagens/capitulo3_engenharia_prompt (2).png" alt="Prompt Engineering" class="w-24 h-24 object-cover rounded-lg ml-4">
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        Domine a habilidade mais valiosa da era da IA: criar prompts eficazes. Aprenda técnicas avançadas como Chain-of-Thought, Few-Shot Learning e mais. Inclui 100+ exemplos práticos.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 55-70 min</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 4 vídeos</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📥 Template + 100 Exemplos</span>
+                    </div>
+
+                    <div class="callout callout-tip mb-4">
+                        <span class="callout-icon">💡</span>
+                        <div class="callout-content">
+                            <strong>Salários de Prompt Engineers:</strong> US$ 100k - 335k/ano. Mercado de $280M → $2.5B até 2032
+                        </div>
+                    </div>
+
+                    <button class="bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto">
+                        📖 Iniciar Capítulo
+                    </button>
+                </div>
+
+                <!-- Capítulo 4 -->
+                <div class="chapter-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 mb-6 border-l-4 border-fundamentos">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="inline-block bg-fundamentos text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                                Capítulo 4
+                            </span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                Engenharia de Contexto - Criando Ecossistemas Inteligentes
+                            </h2>
+                        </div>
+                        <img src="doc/imagens/capitulo4_engenharia_contexto (2).png" alt="Context Engineering" class="w-24 h-24 object-cover rounded-lg ml-4">
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        Vá além dos prompts: aprenda a construir sistemas completos que fornecem informações relevantes à IA. Integração de dados, ferramentas e memória para aplicações profissionais.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 45-55 min</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 Vídeos em breve</span>
+                    </div>
+
+                    <button class="bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto">
+                        📖 Iniciar Capítulo
+                    </button>
+                </div>
+
+                <!-- Capítulo 5 -->
+                <div class="chapter-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 mb-6 border-l-4 border-fundamentos">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="inline-block bg-fundamentos text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                                Capítulo 5
+                            </span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                Automação de Processos Empresariais com IA
+                            </h2>
+                        </div>
+                        <img src="doc/imagens/capitulo5_automacao_processos (2).png" alt="Automação" class="w-24 h-24 object-cover rounded-lg ml-4">
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        Identifique processos automatizáveis, use ferramentas no-code (Zapier Agents, Make.com), implemente chatbots e calcule ROI. Análises preditivas e tomada de decisão automatizada.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 60-75 min</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 Vídeos em breve</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🛠️ Ferramentas</span>
+                    </div>
+
+                    <div class="callout callout-exercise mb-4">
+                        <span class="callout-icon">✏️</span>
+                        <div class="callout-content">
+                            <strong>Exercício prático:</strong> Mapeie 5 processos no seu trabalho que poderiam ser automatizados
+                        </div>
+                    </div>
+
+                    <button class="bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto">
+                        📖 Iniciar Capítulo
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Level CTA -->
+    <section class="bg-gradient-to-r from-aplicacao to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">
+                Completou o Nível Fundamentos?
+            </h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Continue sua jornada no Nível Aplicação
+            </p>
+            <a href="nivel-aplicacao.html" class="inline-block bg-white text-aplicacao px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition">
+                ⚡ Ir para Nível Aplicação →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ATIA</h3>
+                    <p class="text-gray-400">
+                        Aprendizado em Tecnologias de Inteligência Artificial
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Níveis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="nivel-fundamentos.html" class="text-fundamentos hover:text-emerald-400 transition">🌟 Fundamentos</a></li>
+                        <li><a href="nivel-aplicacao.html" class="text-gray-400 hover:text-white transition">⚡ Aplicação</a></li>
+                        <li><a href="nivel-estrategico.html" class="text-gray-400 hover:text-white transition">👑 Estratégico</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Recursos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="https://github.com/inematds/ITIA" target="_blank" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ATIA. Powered by BMad Method.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Simple progress tracking (can be enhanced with localStorage)
+        const progressFill = document.getElementById('progress-fill');
+        const progressText = document.getElementById('progress-text');
+
+        // Example: Update based on completed chapters
+        function updateProgress(completed, total) {
+            const percentage = (completed / total) * 100;
+            progressFill.style.width = percentage + '%';
+            progressText.textContent = `${completed}/${total} capítulos`;
+        }
+
+        // Initialize with 0 completed
+        updateProgress(0, 5);
+    </script>
+
+</body>
+</html>
