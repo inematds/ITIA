@@ -8,6 +8,8 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Typography Plugin -->
     <script>
         tailwind.config = {
             theme: {
@@ -18,9 +20,130 @@
                         estrategico: '#8B5CF6'
                     }
                 }
-            }
+            },
+            plugins: []
         }
     </script>
+
+    <!-- Prose Styles for Markdown -->
+    <style>
+        /* Markdown content styling */
+        #chapter-content h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: #1a202c;
+        }
+        #chapter-content h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            color: #2d3748;
+        }
+        #chapter-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            color: #2d3748;
+        }
+        #chapter-content h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+        }
+        #chapter-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+            color: #4a5568;
+            text-align: justify;
+        }
+        #chapter-content strong {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        #chapter-content ul, #chapter-content ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+        #chapter-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.75;
+            color: #4a5568;
+        }
+        #chapter-content ul li {
+            list-style-type: disc;
+        }
+        #chapter-content ol li {
+            list-style-type: decimal;
+        }
+        #chapter-content blockquote {
+            border-left: 4px solid #3B82F6;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #4a5568;
+        }
+        #chapter-content code {
+            background-color: #f7fafc;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-family: 'Courier New', monospace;
+            color: #e53e3e;
+        }
+        #chapter-content pre {
+            background-color: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        #chapter-content pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #e2e8f0;
+        }
+        #chapter-content a {
+            color: #3B82F6;
+            text-decoration: underline;
+        }
+        #chapter-content a:hover {
+            color: #2563eb;
+        }
+        #chapter-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        #chapter-content hr {
+            margin: 2rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+        #chapter-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        #chapter-content th, #chapter-content td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        #chapter-content th {
+            background-color: #f7fafc;
+            font-weight: 600;
+        }
+    </style>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -167,7 +290,7 @@
                 </div>
 
                 <!-- Chapter Content -->
-                <div class="bg-white rounded-lg shadow-md p-8 mb-6 prose prose-lg max-w-none" id="chapter-content">
+                <div class="bg-white rounded-lg shadow-md p-8 mb-6" id="chapter-content">
                     <!-- Markdown content will be loaded here -->
                     <div class="text-center py-12">
                         <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-aplicacao"></div>
