@@ -60,28 +60,24 @@ git clone https://github.com/inematds/ITIA.git
 cd ITIA
 ```
 
-2. Abra o arquivo `index.html` no navegador:
+2. **IMPORTANTE:** Use um servidor local (necessário para carregar conteúdo markdown):
+
 ```bash
-# Windows
-start index.html
+# Opção 1: NPM (recomendado)
+npm start
+# Acesse: http://localhost:8080
 
-# macOS
-open index.html
+# Opção 2: NPM com auto-open
+npm run dev
 
-# Linux
-xdg-open index.html
+# Opção 3: Python
+python -m http.server 8080
+
+# Opção 4: Node.js direto
+npx http-server -p 8080
 ```
 
-Ou use um servidor local:
-```bash
-# Python
-python -m http.server 8000
-
-# Node.js
-npx http-server
-```
-
-Acesse: `http://localhost:8000`
+⚠️ **Nota:** Não abra o `index.html` diretamente no navegador (`file://`), pois causará erros de CORS ao carregar os capítulos markdown.
 
 ---
 
