@@ -2,9 +2,9 @@
 
 > **Do Tsunami Tecnológico às Novas Profissões: Curso Completo de IA Aplicada**
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ativo-brightgreen)](https://inematds.github.io/ITIA/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ativo-brightgreen)](https://inematds.github.io/ATIA/)
 [![Licença](https://img.shields.io/badge/Licença-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/inematds/ITIA)
+[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/inematds/ATIA)
 
 ---
 
@@ -50,14 +50,14 @@ Baseado no manual "A Tsunami da Inteligência Artificial e as Novas Oportunidade
 ## 🚀 Acesso ao Curso
 
 ### 🌐 Online (GitHub Pages)
-**[Acessar Curso →](https://inematds.github.io/ITIA/)**
+**[Acessar Curso →](https://inematds.github.io/ATIA/)**
 
 ### 💻 Local
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/inematds/ITIA.git
-cd ITIA
+git clone https://github.com/inematds/ATIA.git
+cd ATIA
 ```
 
 2. **IMPORTANTE:** Use um servidor local (necessário para carregar conteúdo markdown):
@@ -220,7 +220,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 <div align="center">
 
-**[🚀 Começar Curso](https://inematds.github.io/ITIA/)** | **[📖 Documentação](docs/)** | **[🐛 Reportar Bug](https://github.com/inematds/ITIA/issues)**
+**[🚀 Começar Curso](https://inematds.github.io/ATIA/)** | **[📖 Documentação](docs/)** | **[🐛 Reportar Bug](https://github.com/inematds/ATIA/issues)**
 
 ---
 
