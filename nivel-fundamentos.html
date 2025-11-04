@@ -154,16 +154,30 @@
                         <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 3 vídeos</span>
                     </div>
 
-                    <div class="callout callout-info mb-4">
-                        <span class="callout-icon">📚</span>
-                        <div class="callout-content">
-                            <strong>Tópicos principais:</strong>
-                            <ul class="text-sm mt-2 space-y-1">
-                                <li>• Metáfora do tsunami e natureza exponencial</li>
-                                <li>• Histórico da IA (1950-2025)</li>
-                                <li>• GPT-5, Claude 4, Gemini 2.5 Pro</li>
-                                <li>• Impactos globais e setoriais</li>
-                            </ul>
+                    <!-- Tópicos Expandíveis -->
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-3">📚 Tópicos-chave:</h3>
+
+                        <!-- Tópico 1 -->
+                        <div class="topico-expandivel mb-3" onclick="toggleTopico('cap1-llm')">
+                            <h4 class="flex items-center justify-between">
+                                Large Language Models (LLMs)
+                                <span class="icon">▼</span>
+                            </h4>
+                            <div class="topico-conteudo" id="cap1-llm">
+                                <div class="topico-item">
+                                    <h5>O que é:</h5>
+                                    <p>Large Language Models (LLMs) são modelos de IA que processam e geram texto humano através de padrões aprendidos de enormes quantidades de dados.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Por que aprender:</h5>
+                                    <p>Entender como funcionam te ajuda a criar prompts muito mais eficazes e aproveitar todo o potencial dessas ferramentas.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Conceitos chave:</h5>
+                                    <p>Predição de próxima palavra, padrões estatísticos, treinamento com dados massivos, contexto e temperatura.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -204,6 +218,99 @@
                         </div>
                     </div>
 
+                    <!-- Tópicos Expandíveis -->
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-3">📚 Tópicos-chave:</h3>
+
+                        <!-- Tópico 1: Quarta Revolução Industrial -->
+                        <div class="topico-expandivel mb-3" onclick="toggleTopico('cap2-rev4')">
+                            <h4 class="flex items-center justify-between">
+                                Quarta Revolução Industrial
+                                <span class="icon">▼</span>
+                            </h4>
+                            <div class="topico-conteudo" id="cap2-rev4">
+                                <div class="topico-item">
+                                    <h5>O que é:</h5>
+                                    <p>A fusão de tecnologias emergentes (IA, IoT, robótica, blockchain) que está transformando fundamentalmente como vivemos, trabalhamos e nos relacionamos, borrando as linhas entre os mundos físico, digital e biológico.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Por que aprender:</h5>
+                                    <p>Compreender este contexto maior te ajuda a antecipar mudanças no mercado de trabalho e posicionar-se estrategicamente para aproveitar oportunidades emergentes.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Conceitos chave:</h5>
+                                    <p>Automação de trabalho cognitivo, convergência tecnológica, velocidade exponencial de mudança, transformação de indústrias inteiras.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tópico 2: Indústria 4.0 -->
+                        <div class="topico-expandivel mb-3" onclick="toggleTopico('cap2-ind40')">
+                            <h4 class="flex items-center justify-between">
+                                Indústria 4.0
+                                <span class="icon">▼</span>
+                            </h4>
+                            <div class="topico-conteudo" id="cap2-ind40">
+                                <div class="topico-item">
+                                    <h5>O que é:</h5>
+                                    <p>A quarta geração da manufatura que integra sistemas ciberfísicos, IoT, computação em nuvem e IA para criar fábricas inteligentes e autônomas com produção adaptativa e otimização em tempo real.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Por que aprender:</h5>
+                                    <p>Compreender Indústria 4.0 é essencial não apenas para quem trabalha em manufatura, mas para todos os profissionais, pois seus princípios estão sendo aplicados em praticamente todos os setores.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Conceitos chave:</h5>
+                                    <p>Sistemas ciberfísicos, gêmeos digitais, manutenção preditiva, robôs colaborativos, produção adaptativa.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tópico 3: T-Shaped Skills -->
+                        <div class="topico-expandivel mb-3" onclick="toggleTopico('cap2-tshaped')">
+                            <h4 class="flex items-center justify-between">
+                                T-Shaped Skills
+                                <span class="icon">▼</span>
+                            </h4>
+                            <div class="topico-conteudo" id="cap2-tshaped">
+                                <div class="topico-item">
+                                    <h5>O que é:</h5>
+                                    <p>Um modelo de habilidades que combina profundidade vertical em uma área de especialização (a haste vertical do "T") com amplitude horizontal em múltiplas disciplinas (a barra horizontal do "T"), permitindo colaboração interdisciplinar.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Por que aprender:</h5>
+                                    <p>Profissionais T-shaped são mais resilientes a mudanças, podem se adaptar a múltiplos contextos e são extremamente valiosos em equipes multidisciplinares que trabalham com IA.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Conceitos chave:</h5>
+                                    <p>Especialização profunda, conhecimento amplo, versatilidade, capacidade de integração entre domínios, adaptabilidade.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tópico 4: Alfabetização em IA -->
+                        <div class="topico-expandivel mb-3" onclick="toggleTopico('cap2-alfaia')">
+                            <h4 class="flex items-center justify-between">
+                                Alfabetização em IA
+                                <span class="icon">▼</span>
+                            </h4>
+                            <div class="topico-conteudo" id="cap2-alfaia">
+                                <div class="topico-item">
+                                    <h5>O que é:</h5>
+                                    <p>A capacidade de compreender conceitos fundamentais de IA, avaliar criticamente outputs de sistemas inteligentes, identificar oportunidades de aplicação e trabalhar efetivamente com ferramentas de IA, sem necessariamente ser um especialista técnico.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Por que aprender:</h5>
+                                    <p>A alfabetização em IA está se tornando tão fundamental quanto alfabetização digital foi na década passada - essencial para praticamente qualquer profissional independente do setor ou função.</p>
+                                </div>
+                                <div class="topico-item">
+                                    <h5>Conceitos chave:</h5>
+                                    <p>Compreensão de capacidades e limitações, avaliação crítica de outputs, identificação de vieses, ética em IA, prompt engineering básico.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="capitulo.html?id=capitulo-02-mercado-trabalho" class="inline-block bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto text-center">
                         📖 Iniciar Capítulo
                     </a>
@@ -241,6 +348,14 @@
                         </div>
                     </div>
 
+                    <!-- Tópicos Expandíveis Cap 3 -->
+                    <div class="mb-4"><h3 class="font-semibold text-gray-900 mb-3">📚 Tópicos-chave:</h3>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap3-cot')"><h4 class="flex items-center justify-between">Chain-of-Thought<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap3-cot"><div class="topico-item"><h5>O que é:</h5><p>Uma técnica de prompt engineering que instrui a IA a explicar seu raciocínio passo a passo antes de chegar a uma conclusão, similar a "mostrar o trabalho" em matemática, melhorando significativamente a qualidade e precisão das respostas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Chain-of-Thought melhora dramaticamente a capacidade da IA de resolver problemas complexos, permite verificar a lógica do raciocínio e reduz erros em tarefas que requerem múltiplas etapas de pensamento.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Raciocínio explícito, decomposição de problemas, verificação de lógica, transparência de processo, melhoria de precisão.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap3-fsl')"><h4 class="flex items-center justify-between">Few-Shot Learning<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap3-fsl"><div class="topico-item"><h5>O que é:</h5><p>Uma técnica onde você fornece alguns exemplos (geralmente 2-5) do tipo de output desejado dentro do próprio prompt, permitindo que a IA aprenda o padrão, formato ou estilo esperado através desses exemplos concretos.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Few-shot learning é uma das maneiras mais eficazes de obter outputs consistentes em formato e estilo específicos, sem precisar de treinamento adicional do modelo.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Aprendizado por exemplos, consistência de formato, transferência de padrões, especificação implícita, qualidade de output.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap3-role')"><h4 class="flex items-center justify-between">Role-Playing<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap3-role"><div class="topico-item"><h5>O que é:</h5><p>Uma técnica que instrui a IA a assumir uma persona específica, papel profissional ou perspectiva particular (como "atue como um CEO experiente"), ativando conhecimento relevante e ajustando tom e profundidade das respostas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Role-playing permite acessar expertise especializada da IA, ajusta automaticamente o nível de complexidade e tom das respostas, e pode melhorar significativamente a relevância e utilidade dos outputs.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Personas especializadas, ativação de conhecimento, ajuste de tom, perspectivas múltiplas, contexto profissional.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap3-ctx')"><h4 class="flex items-center justify-between">Context vs Prompt Engineering<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap3-ctx"><div class="topico-item"><h5>O que é:</h5><p>Prompt Engineering foca em como você instrui a IA (a pergunta/comando), enquanto Context Engineering foca em quais informações você fornece à IA (dados, ferramentas, memória). São complementares: um bom prompt sem contexto adequado é limitado, e muito contexto sem um bom prompt é ineficiente.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Dominar ambos permite criar sistemas de IA muito mais poderosos - você saberá tanto como perguntar (prompt) quanto quais informações fornecer (context) para obter os melhores resultados possíveis.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Instruções vs informações, sistemas RAG, gestão de memória, integração de ferramentas, arquitetura de informação.</p></div></div></div>
+                    </div>
+
                     <a href="capitulo.html?id=capitulo-03-engenharia-prompt" class="inline-block bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto text-center">
                         📖 Iniciar Capítulo
                     </a>
@@ -268,6 +383,14 @@
                         <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">⏱️ 45-55 min</span>
                         <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">📖 Leitura</span>
                         <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">🎥 Vídeos em breve</span>
+                    </div>
+
+                    <!-- Tópicos Expandíveis Cap 4 -->
+                    <div class="mb-4"><h3 class="font-semibold text-gray-900 mb-3">📚 Tópicos-chave:</h3>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap4-rag')"><h4 class="flex items-center justify-between">RAG (Retrieval-Augmented Generation)<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap4-rag"><div class="topico-item"><h5>O que é:</h5><p>Uma arquitetura que combina busca de informações (retrieval) com geração de texto pela IA - primeiro o sistema busca documentos/dados relevantes em uma base de conhecimento, depois usa essas informações como contexto para gerar respostas precisas e atualizadas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>RAG resolve um dos maiores problemas da IA: conhecimento desatualizado e alucinações. Permite que a IA acesse informações atualizadas, específicas da sua empresa, e forneça respostas com fontes verificáveis.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Busca semântica, bases de conhecimento externas, grounding em fatos, redução de alucinações, informações atualizadas.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap4-emb')"><h4 class="flex items-center justify-between">Embeddings Vetoriais<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap4-emb"><div class="topico-item"><h5>O que é:</h5><p>Técnica que converte texto em vetores numéricos que capturam o significado semântico, permitindo que o computador "entenda" que "cachorro" e "cão" são similares, possibilitando busca por significado em vez de palavras exatas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>É a tecnologia fundamental por trás de sistemas RAG, busca inteligente e IA contextual - essencial para quem quer implementar sistemas que entendem o que usuários realmente querem.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Representações vetoriais, similaridade semântica, modelos de embedding, busca por vetores, bancos de dados vetoriais.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap4-kg')"><h4 class="flex items-center justify-between">Grafos de Conhecimento<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap4-kg"><div class="topico-item"><h5>O que é:</h5><p>Uma estrutura de dados que representa informações como uma rede de entidades conectadas por relacionamentos, similar a como o cérebro humano organiza conhecimento, permitindo à IA entender conexões complexas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Grafos de conhecimento permitem que sistemas de IA façam inferências sofisticadas, descubram relações ocultas e respondam perguntas complexas que requerem conectar múltiplas peças de informação.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Entidades e relacionamentos, triplas RDF, ontologias, inferência lógica, navegação de grafos.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap4-fc')"><h4 class="flex items-center justify-between">Function Calling<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap4-fc"><div class="topico-item"><h5>O que é:</h5><p>Capacidade da IA de identificar quando precisa usar uma ferramenta externa e automaticamente chamar essa função com os parâmetros corretos, transformando IA de apenas conversacional em IA que pode executar ações concretas.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Function calling transforma IA de um chatbot passivo em um agente ativo que pode realizar tarefas - buscar dados em tempo real, fazer cálculos precisos, integrar com sistemas empresariais.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Tool use, API integration, parameter extraction, orquestração de agentes, automação de workflows, IA agentic.</p></div></div></div>
                     </div>
 
                     <a href="capitulo.html?id=capitulo-04-engenharia-contexto" class="inline-block bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto text-center">
@@ -305,6 +428,13 @@
                         <div class="callout-content">
                             <strong>Exercício prático:</strong> Mapeie 5 processos no seu trabalho que poderiam ser automatizados
                         </div>
+                    </div>
+
+                    <!-- Tópicos Expandíveis Cap 5 -->
+                    <div class="mb-4"><h3 class="font-semibold text-gray-900 mb-3">📚 Tópicos-chave:</h3>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap5-rpa')"><h4 class="flex items-center justify-between">RPA (Robotic Process Automation)<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap5-rpa"><div class="topico-item"><h5>O que é:</h5><p>Tecnologia que usa "robôs de software" para automatizar tarefas repetitivas baseadas em regras, simulando ações humanas em interfaces de usuário (clicar, digitar, copiar/colar), permitindo automação mesmo sem APIs.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>RPA é frequentemente o caminho mais rápido e econômico para automatizar processos existentes sem reescrever sistemas, especialmente útil com sistemas legados. Com IA moderna, RPA evoluiu para automação inteligente.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Bots de software, automação de UI, processos baseados em regras, sistemas legados, automação attended vs unattended.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap5-nocode')"><h4 class="flex items-center justify-between">Plataformas No-Code/Low-Code<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap5-nocode"><div class="topico-item"><h5>O que é:</h5><p>Ferramentas que permitem criar automações e aplicações através de interfaces visuais (arrastar e soltar) sem escrever código tradicional, democratizando o desenvolvimento para profissionais de negócio.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>No-code está revolucionando quem pode criar automação - em vez de esperar meses por TI, você pode construir soluções em dias ou horas. Reduz tempo de implementação em 70-90%.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Desenvolvimento visual, citizen developers, democratização de tecnologia, redução de backlog de TI, agilidade organizacional.</p></div></div></div>
+                    <div class="topico-expandivel mb-2" onclick="toggleTopico('cap5-pred')"><h4 class="flex items-center justify-between">Automação Preditiva<span class="icon">▼</span></h4><div class="topico-conteudo" id="cap5-pred"><div class="topico-item"><h5>O que é:</h5><p>Sistemas que não apenas executam tarefas automaticamente, mas usam machine learning para prever necessidades futuras e tomar ações proativas - como prever quando uma máquina vai quebrar e agendar manutenção antes da falha.</p></div><div class="topico-item"><h5>Por que aprender:</h5><p>Automação preditiva move organizações de reativas para proativas, reduzindo custos (manutenção preventiva), melhorando experiência do cliente (antecipar necessidades) e otimizando recursos.</p></div><div class="topico-item"><h5>Conceitos chave:</h5><p>Machine learning aplicado, análise preditiva, manutenção preditiva, otimização proativa, tomada de decisão baseada em dados.</p></div></div></div>
                     </div>
 
                     <a href="capitulo.html?id=capitulo-05-automacao-processos" class="inline-block bg-fundamentos text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition w-full md:w-auto text-center">
