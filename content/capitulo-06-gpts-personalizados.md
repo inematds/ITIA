@@ -11,6 +11,12 @@ Os GPTs personalizados não são simplesmente versões modificadas de sistemas e
 
 A importância desta evolução vai muito além da conveniência tecnológica. Estamos testemunhando o nascimento de uma nova economia baseada em agentes de IA, onde a capacidade de criar, treinar e implementar assistentes especializados torna-se uma competência estratégica fundamental. Esta não é apenas uma tendência tecnológica, mas uma transformação que está redefinindo como conhecimento é aplicado, como serviços são entregues e como valor é criado na economia digital.
 
+### TÓPICO: Agentes de IA (AI Agents)
+
+- **O que é:** Sistemas de IA que podem agir autonomamente para alcançar objetivos - não apenas responder perguntas, mas planejar sequências de ações, usar ferramentas, tomar decisões e executar tarefas complexas com mínima supervisão humana, como um assistente virtual que gerencia projetos completos.
+- **Por que aprender:** Agentes de IA representam a evolução de chatbots passivos para colaboradores digitais ativos - podem automatizar workflows complexos, coordenar múltiplas tarefas e operar 24/7, multiplicando dramaticamente sua capacidade de execução.
+- **Conceitos chave:** Autonomia, planejamento de ações, uso de ferramentas, raciocínio em múltiplos passos, execução de objetivos, IA agentic.
+
 ## O Que São GPTs Personalizados e Como Funcionam
 
 GPTs personalizados são versões especializadas de modelos de linguagem generativa que foram adaptados para domínios específicos, tarefas particulares ou estilos de comunicação únicos. Diferentemente dos modelos genéricos que tentam ser úteis para qualquer situação, os GPTs personalizados são otimizados para exceler em contextos específicos, oferecendo performance superior e resultados mais relevantes.
@@ -38,6 +44,12 @@ GPTs personalizados são versões especializadas de modelos de linguagem generat
 ### Tecnologias Subjacentes
 
 **Fine-Tuning**: Processo de ajuste fino onde modelos pré-treinados são refinados com dados específicos do domínio, melhorando performance em tarefas particulares.
+
+### TÓPICO: Fine-Tuning
+
+- **O que é:** Processo de "retreinar" um modelo de IA já existente (como GPT) com dados específicos do seu domínio ou caso de uso, ajustando os parâmetros do modelo para que ele se especialize em tarefas ou conhecimentos particulares, como terminologia médica ou processos da sua empresa.
+- **Por que aprender:** Fine-tuning permite criar IA altamente especializada para seu negócio - com linguagem, conhecimento e comportamentos únicos da sua organização - superando modelos genéricos em precisão e relevância para casos específicos.
+- **Conceitos chave:** Transfer learning, ajuste de parâmetros, dados de treinamento específicos, especialização de modelos, performance em domínio específico.
 
 **Retrieval-Augmented Generation (RAG)**: Técnica que combina geração de linguagem com recuperação de informações de bases de conhecimento específicas, permitindo respostas mais precisas e atualizadas.
 

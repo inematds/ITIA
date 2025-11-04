@@ -59,6 +59,12 @@ A diferenciação competitiva deve identificar vantagens únicas que a organiza�
 
 A implementação estratégica de IA requer abordagem faseada que equilibra ambição com pragmatismo. A primeira fase, focada na fundação, tipicamente dura 6-12 meses e inclui estabelecimento de governança robusta, desenvolvimento de competências básicas, implementação de infraestrutura necessária, execução de projetos piloto de baixo risco e criação de awareness organizacional.
 
+### TÓPICO: Roadmap de Implementação de IA
+
+- **O que é:** Plano estratégico faseado para adoção organizacional de IA que define etapas sequenciais (piloto → escala → transformação), prioriza casos de uso, aloca recursos, desenvolve capacidades e estabelece métricas de sucesso - movendo organização de iniciativas ad-hoc para IA integrada estrategicamente.
+- **Por que aprender:** Implementações de IA falham frequentemente por falta de estratégia clara - roadmaps estruturados aumentam probabilidade de sucesso, garantem alinhamento organizacional, gerenciam riscos e demonstram ROI progressivo, essenciais para liderança organizacional.
+- **Conceitos chave:** Faseamento estratégico, priorização de casos de uso, desenvolvimento de capacidades, gestão de mudança, métricas de maturidade.
+
 A segunda fase de expansão, durando 12-24 meses, concentra-se na escala de casos de uso validados, desenvolvimento de competências avançadas, integração profunda de sistemas, otimização de processos críticos e medição rigorosa de ROI.
 
 A terceira fase de transformação, estendendo-se por 24-36 meses, envolve implementação em escala organizacional, inovação de modelos de negócio, estabelecimento de liderança de mercado, desenvolvimento de cultura AI-native e criação de vantagem competitiva sustentável.

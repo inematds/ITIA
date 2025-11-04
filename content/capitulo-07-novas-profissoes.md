@@ -33,6 +33,12 @@ Perfil do Cliente:
 
 Gerentes de produto de IA são responsáveis por traduzir necessidades de negócio em produtos de IA viáveis, gerenciando o ciclo de vida completo desde concepção até lançamento e otimização contínua.
 
+### TÓPICO: AI Product Manager
+
+- **O que é:** Profissional que gerencia produtos que incorporam IA, fazendo a ponte entre equipes técnicas (cientistas de dados, engenheiros de ML) e stakeholders de negócio, definindo requisitos, priorizando features e garantindo que produtos de IA entreguem valor real.
+- **Por que aprender:** Uma das profissões mais demandadas e bem remuneradas da era IA - combina habilidades de produto com compreensão de capacidades e limitações de IA, essencial para empresas que estão incorporando IA em seus produtos.
+- **Conceitos chave:** Gestão de ciclo de vida de produto, colaboração técnica-negócio, métricas de ML, ética em IA, estratégia de dados.
+
 ```
 Responsabilidades Únicas:
 - Definição de requisitos para produtos de IA
@@ -51,6 +57,12 @@ Desafios Específicos:
 **AI Ethics Officer (Oficial de Ética em IA)**
 
 Uma profissão emergente crucial, oficiais de ética em IA são responsáveis por garantir que sistemas de IA sejam desenvolvidos e implementados de forma responsável, justa e transparente.
+
+### TÓPICO: AI Ethics Officer (Oficial de Ética em IA)
+
+- **O que é:** Profissional responsável por garantir que sistemas de IA sejam desenvolvidos e usados de forma ética, justa e transparente - auditando modelos para bias, desenvolvendo políticas de IA responsável e garantindo compliance com regulamentações emergentes de IA.
+- **Por que aprender:** Com regulamentações de IA aumentando globalmente (EU AI Act, etc.) e crescentes preocupações sobre bias e fairness, esta profissão está se tornando obrigatória em organizações que usam IA - combina ética, tecnologia e compliance.
+- **Conceitos chave:** Bias em IA, fairness algorítmica, IA explicável (XAI), compliance regulatório, auditoria de IA, IA responsável.
 
 ```
 Domínios de Responsabilidade:

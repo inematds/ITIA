@@ -62,6 +62,12 @@ Context engineering inclui:
 
 A verdadeira maestria na comunicação com IA vem da combinação eficaz de prompt engineering e context engineering. Enquanto prompts fornecem instruções específicas, o contexto fornece o conhecimento e ferramentas necessários para executar essas instruções efetivamente.
 
+### TÓPICO: Context Engineering vs Prompt Engineering
+
+- **O que é:** Prompt Engineering foca em como você instrui a IA (a pergunta/comando), enquanto Context Engineering foca em quais informações você fornece à IA (dados, ferramentas, memória). São complementares: um bom prompt sem contexto adequado é limitado, e muito contexto sem um bom prompt é ineficiente.
+- **Por que aprender:** Dominar ambos permite criar sistemas de IA muito mais poderosos - você saberá tanto como perguntar (prompt) quanto quais informações fornecer (context) para obter os melhores resultados possíveis.
+- **Conceitos chave:** Instruções vs informações, sistemas RAG (Retrieval Augmented Generation), gestão de memória, integração de ferramentas, arquitetura de informação.
+
 Por exemplo, um sistema de atendimento ao cliente pode usar context engineering para acessar histórico do cliente, base de conhecimento da empresa e ferramentas de CRM, enquanto prompt engineering é usado para formular respostas personalizadas e apropriadas para cada situação específica.
 
 ## Técnicas Avançadas de Criação de Prompts Eficazes
@@ -83,6 +89,12 @@ Nível 3: "Escreva um artigo de 1500 palavras sobre estratégias de marketing di
 
 A técnica de role-playing envolve instruir o sistema de IA a assumir uma persona específica ou papel profissional. Esta abordagem aproveita o treinamento extensivo dos modelos de IA em diferentes domínios de conhecimento, permitindo acesso a expertise especializada.
 
+### TÓPICO: Role-Playing (Interpretação de Papéis)
+
+- **O que é:** Uma técnica que instrui a IA a assumir uma persona específica, papel profissional ou perspectiva particular (como "atue como um CEO experiente" ou "você é um professor de matemática"), ativando conhecimento relevante e ajustando tom e profundidade das respostas.
+- **Por que aprender:** Role-playing permite acessar expertise especializada da IA, ajusta automaticamente o nível de complexidade e tom das respostas, e pode melhorar significativamente a relevância e utilidade dos outputs.
+- **Conceitos chave:** Personas especializadas, ativação de conhecimento, ajuste de tom, perspectivas múltiplas, contexto profissional.
+
 **Exemplos de Role-Playing Eficaz:**
 - "Atue como um consultor de estratégia sênior da McKinsey..."
 - "Você é um professor de física com 20 anos de experiência..."
@@ -91,6 +103,12 @@ A técnica de role-playing envolve instruir o sistema de IA a assumir uma person
 ### Técnica do Chain-of-Thought (Cadeia de Pensamento)
 
 Esta técnica envolve instruir o sistema de IA a mostrar seu processo de raciocínio passo a passo. Isso não apenas melhora a qualidade das respostas, mas também permite verificar a lógica por trás das conclusões.
+
+### TÓPICO: Chain-of-Thought (Cadeia de Pensamento)
+
+- **O que é:** Uma técnica de prompt engineering que instrui a IA a explicar seu raciocínio passo a passo antes de chegar a uma conclusão, similar a "mostrar o trabalho" em matemática, melhorando significativamente a qualidade e precisão das respostas.
+- **Por que aprender:** Chain-of-Thought melhora dramaticamente a capacidade da IA de resolver problemas complexos, permite verificar a lógica do raciocínio e reduz erros em tarefas que requerem múltiplas etapas de pensamento.
+- **Conceitos chave:** Raciocínio explícito, decomposição de problemas, verificação de lógica, transparência de processo, melhoria de precisão.
 
 **Exemplo de Chain-of-Thought:**
 ```
@@ -104,6 +122,12 @@ Esta técnica envolve instruir o sistema de IA a mostrar seu processo de racioc�
 ### Técnica do Few-Shot Learning
 
 Few-shot learning envolve fornecer alguns exemplos do tipo de output desejado dentro do próprio prompt. Esta técnica é particularmente eficaz para tarefas que requerem formato específico ou estilo particular.
+
+### TÓPICO: Few-Shot Learning
+
+- **O que é:** Uma técnica onde você fornece alguns exemplos (geralmente 2-5) do tipo de output desejado dentro do próprio prompt, permitindo que a IA aprenda o padrão, formato ou estilo esperado através desses exemplos concretos.
+- **Por que aprender:** Few-shot learning é uma das maneiras mais eficazes de obter outputs consistentes em formato e estilo específicos, sem precisar de treinamento adicional do modelo.
+- **Conceitos chave:** Aprendizado por exemplos, consistência de formato, transferência de padrões, especificação implícita, qualidade de output.
 
 **Exemplo de Few-Shot Learning:**
 ```

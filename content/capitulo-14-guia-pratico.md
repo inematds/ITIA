@@ -15,6 +15,12 @@ Cada seção deste capítulo foi projetada para ser imediatamente aplicável, fo
 
 Sua jornada pessoal na era da IA começa com autoavaliação honesta e desenvolvimento de um plano estruturado que alinha suas aspirações com as realidades do mercado digital emergente.
 
+### TÓPICO: Roadmap de Implementação Prática de IA
+
+- **O que é:** Plano passo a passo e acionável para integrar IA em sua vida profissional ou organização - desde autoavaliação e aprendizado inicial até implementação de projetos piloto, escala e transformação completa, com prazos, métricas e recursos específicos para cada fase.
+- **Por que aprender:** A maioria das iniciativas de IA falha por falta de planejamento estruturado - um roadmap claro transforma intenções vagas em ações concretas, garante progresso mensurável e maximiza probabilidade de sucesso tanto pessoal quanto organizacional.
+- **Conceitos chave:** Faseamento (aprendizado → piloto → escala), autoavaliação de competências, projetos práticos, métricas de progresso, desenvolvimento contínuo.
+
 ### Fase 1: Avaliação e Preparação (Mês 1-2)
 
 **Autoavaliação de Competências**

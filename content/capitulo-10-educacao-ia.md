@@ -19,6 +19,12 @@ Esta transformação se estende muito além de melhorias incrementais em método
 
 A personalização da educação com IA representa uma evolução qualitativa completa além dos métodos tradicionais de diferenciação educacional. Enquanto abordagens tradicionais podem ajustar ritmo ou fornecer recursos adicionais, sistemas de IA podem fundamentalmente adaptar conteúdo, metodologia, formato, sequenciamento e até mesmo objetivos de aprendizagem para maximizar a eficácia educacional para cada indivíduo único.
 
+### TÓPICO: Aprendizagem Adaptativa com IA
+
+- **O que é:** Sistemas educacionais que usam IA para dinamicamente ajustar conteúdo, sequenciamento, metodologia e ritmo de ensino em tempo real baseado no desempenho, preferências e estilo de aprendizagem de cada estudante individual - criando experiências educacionais verdadeiramente personalizadas em escala massiva.
+- **Por que aprender:** Aprendizagem adaptativa pode melhorar retenção em 30-50% e reduzir tempo de aprendizagem em 40-60% - democratiza acesso a educação de qualidade tipo tutor-individual para milhões, eliminando o modelo "tamanho único" que falha com tantos estudantes.
+- **Conceitos chave:** Personalização em tempo real, modelagem de estudante, sequenciamento inteligente de conteúdo, adaptação pedagógica, tutores virtuais.
+
 ### Fundamentos da Aprendizagem Adaptativa Inteligente
 
 **Modelagem Multidimensional do Aprendiz**

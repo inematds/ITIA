@@ -19,6 +19,12 @@ O impacto desta revolução se estende além de métricas de performance individ
 
 O lead scoring tradicional baseado em critérios demográficos simples e regras estáticas está sendo completamente substituído por sistemas de IA sofisticados que podem analisar centenas de variáveis comportamentais, contextuais e preditivas em tempo real para identificar prospects com maior probabilidade de conversão. Esta evolução representa uma das aplicações mais impactantes de IA em vendas, transformando fundamentalmente como organizações identificam e priorizam oportunidades de negócio.
 
+### TÓPICO: Lead Scoring com IA
+
+- **O que é:** Sistema que usa machine learning para automaticamente pontuar e classificar leads (potenciais clientes) com base em centenas de variáveis comportamentais e contextuais, identificando quais prospects têm maior probabilidade de converter e devem receber atenção prioritária da equipe de vendas.
+- **Por que aprender:** Lead scoring com IA pode aumentar taxas de conversão em 20-30% ao focar esforços nos leads certos, reduzir ciclos de vendas e melhorar produtividade da equipe - essencial para vendas modernas baseadas em dados.
+- **Conceitos chave:** Modelos preditivos, análise comportamental, priorização automática, integração com CRM, otimização contínua de modelos.
+
 ### A Evolução Revolucionária do Lead Scoring
 
 **Do Primitivo ao Preditivo: Uma Transformação Completa**

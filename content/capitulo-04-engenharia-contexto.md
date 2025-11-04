@@ -63,9 +63,27 @@ A construção de sistemas eficazes de engenharia de contexto requer uma abordag
 
 **Retrieval-Augmented Generation (RAG)**: Uma das técnicas mais importantes em engenharia de contexto, RAG combina a capacidade generativa de modelos de linguagem com acesso dinâmico a bases de conhecimento externas. O sistema primeiro recupera informações relevantes e depois as utiliza para gerar respostas informadas e atualizadas.
 
+### TÓPICO: RAG (Retrieval-Augmented Generation)
+
+- **O que é:** Uma arquitetura que combina busca de informações (retrieval) com geração de texto pela IA - primeiro o sistema busca documentos/dados relevantes em uma base de conhecimento, depois usa essas informações como contexto para gerar respostas precisas e atualizadas.
+- **Por que aprender:** RAG resolve um dos maiores problemas da IA: conhecimento desatualizado e alucinações. Permite que a IA acesse informações atualizadas, específicas da sua empresa, e forneça respostas com fontes verificáveis.
+- **Conceitos chave:** Busca semântica, bases de conhecimento externas, grounding em fatos, redução de alucinações, informações atualizadas.
+
 **Embeddings Vetoriais e Busca Semântica**: Técnicas que convertem informações textuais em representações vetoriais que capturam significado semântico, permitindo busca por similaridade conceitual em vez de apenas correspondência de palavras-chave.
 
+### TÓPICO: Embeddings Vetoriais e Busca Semântica
+
+- **O que é:** Técnica que converte texto em vetores numéricos (arrays de números) que capturam o significado semântico, permitindo que o computador "entenda" que "cachorro" e "cão" são similares, ou que "rei" - "homem" + "mulher" ≈ "rainha", possibilitando busca por significado em vez de palavras exatas.
+- **Por que aprender:** É a tecnologia fundamental por trás de sistemas RAG, busca inteligente e IA contextual - essencial para quem quer implementar sistemas que entendem o que usuários realmente querem, não apenas o que eles digitam.
+- **Conceitos chave:** Representações vetoriais, similaridade semântica, modelos de embedding, busca por vetores, bancos de dados vetoriais.
+
 **Grafos de Conhecimento**: Estruturas que representam informações como redes de entidades e relacionamentos, permitindo que sistemas de IA compreendam conexões complexas entre diferentes conceitos e dados.
+
+### TÓPICO: Grafos de Conhecimento (Knowledge Graphs)
+
+- **O que é:** Uma estrutura de dados que representa informações como uma rede de entidades (pessoas, lugares, conceitos) conectadas por relacionamentos (trabalha em, localizado em, é tipo de), similar a como o cérebro humano organiza conhecimento, permitindo à IA entender conexões complexas.
+- **Por que aprender:** Grafos de conhecimento permitem que sistemas de IA façam inferências sofisticadas, descubram relações ocultas e respondam perguntas complexas que requerem conectar múltiplas peças de informação.
+- **Conceitos chave:** Entidades e relacionamentos, triplas RDF, ontologias, inferência lógica, navegação de grafos, consultas SPARQL.
 
 **Filtragem Temporal e Contextual**: Algoritmos que consideram não apenas relevância semântica, mas também fatores como recência da informação, autoridade da fonte e contexto específico da consulta.
 
@@ -96,6 +114,12 @@ A verdadeira potência da engenharia de contexto emerge quando dados, ferramenta
 ### Orquestração de Ferramentas
 
 **Function Calling**: Capacidade de sistemas de IA de invocar funções e ferramentas externas baseado em necessidades identificadas durante o processamento, permitindo que a IA execute ações além de gerar texto.
+
+### TÓPICO: Function Calling (Chamada de Funções)
+
+- **O que é:** Capacidade da IA de identificar quando precisa usar uma ferramenta externa (como calculadora, API de clima, banco de dados) e automaticamente chamar essa função com os parâmetros corretos, transformando IA de apenas conversacional em IA que pode executar ações concretas.
+- **Por que aprender:** Function calling transforma IA de um chatbot passivo em um agente ativo que pode realizar tarefas - buscar dados em tempo real, fazer cálculos precisos, integrar com sistemas empresariais, automatizar workflows complexos.
+- **Conceitos chave:** Tool use, API integration, parameter extraction, orquestração de agentes, automação de workflows, IA agentic.
 
 **Workflow Automation**: Sistemas que permitem que a IA orquestre sequências complexas de tarefas, coordenando múltiplas ferramentas e sistemas para alcançar objetivos específicos.
 

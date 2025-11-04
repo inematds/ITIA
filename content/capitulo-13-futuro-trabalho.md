@@ -71,6 +71,12 @@ O setor de "AI Safety and Alignment" está crescendo rapidamente conforme organi
 
 A colaboração entre humanos e IA está evoluindo de uma curiosidade técnica para o paradigma dominante de trabalho produtivo, criando novas formas de sinergia que amplificam as forças únicas de ambos os domínios enquanto compensam suas respectivas limitações.
 
+### TÓPICO: Colaboração Humano-IA (Human-AI Collaboration)
+
+- **O que é:** Modelo de trabalho onde humanos e IA combinam suas forças complementares em sinergia - IA cuida de análise de dados, padrões e tarefas repetitivas enquanto humanos focam em criatividade, julgamento ético, relacionamentos e decisões complexas, criando resultados superiores ao que qualquer um alcançaria sozinho.
+- **Por que aprender:** O futuro não é IA substituindo humanos, mas humanos augmentados por IA - profissionais que dominam colaboração humano-IA são exponencialmente mais produtivos e valiosos, esse é o skillset fundamental para praticamente todas as profissões futuras.
+- **Conceitos chave:** Augmentação humana, divisão inteligente de trabalho, forças complementares, interfaces naturais, aprendizagem mútua contínua.
+
 ### Modelos de Colaboração Complementar
 
 **Divisão Inteligente de Trabalho**
